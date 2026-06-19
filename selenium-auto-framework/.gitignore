@@ -1,0 +1,26 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Reports & Screenshots
+reports/
+screenshots/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+*.jar
+*.war
