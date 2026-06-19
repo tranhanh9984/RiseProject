@@ -296,9 +296,7 @@ public class DashboardTest extends BaseRiseCrmTest {
         String noteText = "Updated note " + timestamp;
         dashboardPage.typeStickyNote(noteText);
 
-        // Click outside to save
-        dashboardPage.scrollToElement(By.tagName("body"));
-
+        // Refresh page to save and verify persistence
         dashboardPage.refresh();
         String savedNote = dashboardPage.getStickyNoteText();
         Assert.assertTrue(savedNote.contains(noteText),

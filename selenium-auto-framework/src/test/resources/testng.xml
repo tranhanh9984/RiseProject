@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Selenium Automation Suite" parallel="methods" thread-count="2" verbose="1">
+<suite name="Selenium Automation Suite" parallel="classes" thread-count="8" verbose="1">
 
     <listeners>
         <listener class-name="com.framework.listeners.ExtentReportListener"/>
@@ -11,6 +11,41 @@
         <classes>
             <class name="com.framework.tests.HomePageTest"/>
             <class name="com.framework.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- RISE CRM - Dashboard Module (29 TCs) -->
+    <test name="RISE CRM - Dashboard">
+        <classes>
+            <class name="com.framework.tests.rise.DashboardTest"/>
+        </classes>
+    </test>
+
+    <!-- RISE CRM - Clients Module (26 TCs) -->
+    <test name="RISE CRM - Clients">
+        <classes>
+            <class name="com.framework.tests.rise.ClientsTest"/>
+        </classes>
+    </test>
+
+    <!-- RISE CRM - Leads Module (23 TCs) -->
+    <test name="RISE CRM - Leads">
+        <classes>
+            <class name="com.framework.tests.rise.LeadsTest"/>
+        </classes>
+    </test>
+
+    <!-- RISE CRM - Projects Module (19 TCs) -->
+    <test name="RISE CRM - Projects">
+        <classes>
+            <class name="com.framework.tests.rise.ProjectsTest"/>
+        </classes>
+    </test>
+
+    <!-- RISE CRM - Tasks Module (30 TCs) -->
+    <test name="RISE CRM - Tasks">
+        <classes>
+            <class name="com.framework.tests.rise.TasksTest"/>
         </classes>
     </test>
 

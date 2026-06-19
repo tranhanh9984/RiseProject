@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where mvn)",
+      "Bash(ls \"c:/Users/Admin/selenium-auto-framework/mvnw\"*)",
+      "Bash(cmd.exe /c \"mvn --version\")",
+      "Bash(cmd.exe /c \"java -version\")",
+      "Bash(powershell.exe -Command \"Get-Command mvn -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; if \\(-not $?\\) { Get-ChildItem ''C:\\\\'' -Recurse -Filter ''mvn.cmd'' -Depth 3 -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName }\")",
+      "Bash(powershell.exe -Command \"Get-Command mvn -ErrorAction SilentlyContinue\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\'' -Recurse -Filter ''mvn.cmd'' -Depth 3 -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName\")",
+      "Bash(echo \"$PATH\")",
+      "Bash(printenv PATH)",
+      "Bash(winget install --id EclipseAdoptium.Temurin.17.JDK --accept-package-agreements --accept-source-agreements)",
+      "Bash(winget install --id Apache.Maven --accept-package-agreements --accept-source-agreements)"
+    ]
+  }
+}
